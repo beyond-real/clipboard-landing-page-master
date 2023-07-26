@@ -1,0 +1,228 @@
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --facebook: #3b5998;
+  --instagram: red;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+/* main */
+.container {
+  font-size: 16px;
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+/* color  */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  padding-inline: 3rem;
+  color: var(--Dark-Grayish-Blue);
+}
+
+p {
+  padding-inline: 1rem;
+  color: var(--Grayish-Blue);
+}
+
+/*   0ne    */
+.one {
+  background: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.one img {
+  padding-block: 4rem;
+}
+:.header  {
+  margin-bottom: 2rem;
+}
+.head {
+  margin-bottom: 1rem;
+}
+.one p {
+  margin-bottom: 3rem;
+}
+
+/*   buttons    */
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  margin-bottom: 2rem;
+  padding-block: 1rem;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  width: 70%;
+  max-width: 350px;
+}
+.ios {
+  background: var(--Strong-Cyan);
+}
+.mac {
+  background: var(--Light-Blue);
+}
+
+/*   Two    */
+.two img,
+.three img {
+  padding-inline: 2rem;
+  max-width: 95%;
+}
+
+.two {
+  margin-bottom: 2rem;
+}
+.two h3 {
+  padding-block: 1rem;
+}
+
+/*   Three   */
+.three img {
+  padding-top: 1rem;
+}
+
+/*   Four    */
+.four {
+  padding-block: 1rem;
+}
+.four img {
+  padding-block: 1rem;
+}
+
+/*   Five  */
+
+.five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.five img {
+  padding-block: 1rem;
+}
+
+/*   Six  */
+.six h2,
+.six p {
+  padding-block: 1.5rem;
+}
+
+/*   Footer  */
+.footer {
+  text-align: center;
+  background: hsla(201, 11%, 66%, 0.5);
+}
+
+.logo {
+  max-width: 100px;
+}
+.footer section {
+  padding-block: 1rem;
+}
+p {
+  color: var(--Dark-Grayish-Blue);
+  padding-bottom: 0.5rem;
+}
+
+/* fa-bands  */
+.fa-brands {
+  font-size: 30px;
+  padding-inline-end: 1rem;
+}
+
+     /*  active , hover  */
+
+.ios:active,
+.ios:hover{
+    box-shadow: 2px 2px 20px 5px var(--Strong-Cyan);
+}
+.mac:active,
+.mac:hover{
+    box-shadow: 2px 2px 20px 5px var(--Light-Blue);
+}
+.contact-us:hover,
+.contact-us:active {
+  cursor: pointer;
+  color: var(--Strong-Cyan);
+}
+.fa-twitter:active,
+.fa-twitter:hover {
+  color: var(--Strong-Cyan);
+}
+.fa-facebook:active,
+.fa-facebook:hover {
+  color: var(--facebook);
+}
+.fa-instagram:active,
+.fa-instagram:hover {
+  color: var(--instagram);
+}
+
+@media only screen and (min-width: 1000px) {
+  .one {
+    min-height: 100vh;
+  }
+  .head {
+    font-size: 30px;
+    padding-block: 2rem;
+  }
+  .one p {
+    padding-inline: 15rem;
+  }
+  .clip {
+    padding-bottom: 4rem;
+  }
+  .two {
+    display: flex;
+    padding-block: 3rem;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .flex {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    margin-inline: 10rem;
+  }
+  .five {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-block: 2rem;
+    padding-inline: 4rem;
+  }
+  .footer {
+    margin-inline: 1rem;
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+  }
+  .last {
+    margin-bottom: 2rem;
+  }
+
+}
